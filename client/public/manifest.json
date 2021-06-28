@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Accuranker - Country list",
+  "name": "Accuranker - Country list",
+  "description": "A single page to show a list of countries and their continents",
   "icons": [
     {
       "src": "favicon.ico",
