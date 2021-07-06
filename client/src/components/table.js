@@ -57,7 +57,7 @@ const Table = ({ data }) => {
         {
             field: 'flag',
             name: 'Flag',
-            render: (flag) => { return <ReactCountryFlag countryCode={flag} svg aria-label={flag} style={{ width: '2em', height: '2em' }} />; },
+            render: (flag) => { return <ReactCountryFlag countryCode={flag} svg aria-label={flag} className="flag" style={{margin: "auto 0"}}/>; },
             sortable: true,
             mobileOptions: {
                 header: true,

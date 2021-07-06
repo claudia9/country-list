@@ -1,3 +1,14 @@
+/* Color palette */
+$main-color: #006BB4;
+$slate-blue: #725ac1ff;
+$middle-blue-purple: #8d86c9ff;
+$lavender-gray: #cac4ceff;
+$linen: #f7ece1ff;
+
+html {
+  background-color: white !important;
+}
+
 body {
   margin: 0;
   font-family: 'Literata', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,33 +17,51 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* Header */
+.euiFlexGroup, .euiTitle--large {
+  color: $linen;
+}
+/* -- End header */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* -- Body -- */
+.euiPageBody {
+  background-color: $main-color;
+}
+/* -- End body -- */
+
+/* -- Footer -- */
+.euiBottomBar {
+  background: $main-color !important;
 }
 
-.footer {
-  padding:40px 0;
-  background-color:#ffffff;
-  color:#4b4c4d;
-}
 .footer .copyright {
   margin-top:15px;
-  text-align:center;
   font-size:13px;
-  color:#aaa;
+  text-align:center;
+  color: $linen;
   margin-bottom:0;
 }
+/* -- End footer -- */
 
-.euiFlexGroup {
-  font-family: 'Literata',
+
+/* -- Table elements -- */
+.euiEmptyPrompt {
+  max-width: 50em !important;
 }
-
+.flag {
+  width: 2em;
+  height: 2em;
+  margin: auto 0;
+}
 .euiPagination__list li {
   list-style: none;
+}
+.euiText ul, .euiText ol {
+  margin: auto;
 }
 
 .euiTable.euiTable--responsive .euiTableRowCell__mobileHeader { 
   text-align: left;
 }
+
+/* -- End table elements -- */
